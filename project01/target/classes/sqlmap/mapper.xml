@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵핑될 DAO 인터페이스의 Full name 을 줍니다. -->
+<mapper namespace="com.project01.ysm.dao.FileDao">
+
+<insert id="fileUpload" parameterType="map">
+
+insert into
+    TB_FILE(
+        IDX,
+        BOARD_IDX,
+        ORIGINAL_FILE_NAME,
+        STORED_FILE_NAME,
+        FILE_SIZE,
+        CREA_ID)
+    values(
+        SEQ_TB_FILE_IDX.nextval,
+        SEQ_TB_FILE_IDX1.nextval,
+        #{ORIGINAL_FILE_NAME},
+        #{STORED_FILE_NAME},
+        #{FILE_SIZE},
+        'Admin'
+    )
+    
+</insert>
+
+</mapper>
