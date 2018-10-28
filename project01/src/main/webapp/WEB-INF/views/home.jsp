@@ -24,7 +24,7 @@ $(function(){
   <div class="layer_inner">
     <div class="content">
     	<h1>
-			Hello world!  
+			Hello world! Welcome!
 		</h1>
 		
 		<P>  The time on the server is ${serverTime}. </P>
